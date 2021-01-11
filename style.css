@@ -225,3 +225,9 @@ p {
 .job__period {
   font-size: var(--font-micro);
 }
+
+/* Skill */
+
+#skills {
+  background-color: rgb(229, 255, 181);
+}
