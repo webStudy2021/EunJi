@@ -385,3 +385,54 @@ p {
   background-color: var(--color-dark-white);
   color: var(--color-white);
 }
+
+/* Testimonial */
+#testimonials {
+  background-color: rgb(196, 195, 195);
+}
+
+.testimonials {
+  margin: 40px;
+}
+
+.testimonial {
+  display: flex;
+  margin: 32px 0;
+}
+
+.testimonial__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.testimonial__avatar:nth-child(odd) {
+  margin-right: 40px;
+}
+
+.testimonial__avatar:nth-child(even) {
+  margin-left: 40px;
+}
+
+.testimonial__speech-bubble {
+  padding: 10px;
+  background-color: rgb(241, 214, 219);
+  border-radius: var(--size-border-radius);
+}
+
+.testimonial__speech-bubble p {
+  color: var(--color-dark-grey);
+}
+
+.testimonial__speech-bubble a {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+.testimonial__speech-bubble .name1 {
+  color: rgb(22, 22, 233);
+}
+
+.testimonial__speech-bubble .name2 {
+  color: rgb(161, 18, 18);
+}
