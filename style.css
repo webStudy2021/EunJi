@@ -89,11 +89,19 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #ffc6c6;
+  background-color: transparent;
   align-items: center;
   padding: 16px;
+  height: 60px;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: rgb(253, 209, 216);
 }
 
 .navbar__menu {
@@ -113,8 +121,16 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.navbar__menu__item-contact {
+  padding: 8px 20px;
+  margin: 0 4px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: var(--size-border-radius);
+}
+
 .navbar__menu__item.active {
-  border: 1px solid var(--color-grey);
+  border: 1px solid var(--color-light-white);
 }
 
 .navbar__menu__item:hover {
@@ -133,6 +149,7 @@ p {
 #home {
   background: url("imgs/home-background.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
